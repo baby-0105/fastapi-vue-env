@@ -34,3 +34,10 @@ $ docker-compose exec back bash
 # cd /usr/src/app/db
 # python seed.py
 ```
+
+## local host
+
+```
+http://localhost:8888/docs # Open API
+http://localhost:8080
+```
