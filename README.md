@@ -43,6 +43,6 @@ http://localhost:8080
 ```
 
 # 参考
-https://zenn.dev/yusugomori/articles/a3d5dc8baf9e386a58e5#%E3%83%9E%E3%82%A4%E3%82%B0%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E8%A8%AD%E5%AE%9A
+https://zenn.dev/yusugomori/articles/a3d5dc8baf9e386a58e5
 
 https://github.com/testdrivenio/fastapi-vue
