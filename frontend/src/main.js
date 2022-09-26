@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.css';
+import '@/assets/style/tailwind-input.css';
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 import Vue from 'vue';

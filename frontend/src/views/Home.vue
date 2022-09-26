@@ -1,6 +1,6 @@
 <template>
   <div>
-    <input @click="getHelloWorld" type="button" value="ユーザー情報取得">
+    <input @click="getHelloWorld" type="button" value="ユーザー情報取得" class="text-red-500">
     <div>{{ users }}</div>
   </div>
 </template>
