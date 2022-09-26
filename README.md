@@ -34,3 +34,15 @@ $ docker-compose exec back bash
 # cd /usr/src/app/db
 # python seed.py
 ```
+
+## local host
+
+```
+http://localhost:8888/docs # Open API
+http://localhost:8080
+```
+
+# 参考
+https://zenn.dev/yusugomori/articles/a3d5dc8baf9e386a58e5
+
+https://github.com/testdrivenio/fastapi-vue
