@@ -28,7 +28,7 @@ PYTHONPATH=/usr/src/app/backend
 
 ```sh
 $ docker-compose exec back bash
-# cd /usr/src/app/db
+# cd /usr/src/app/backend
 # python seed.py
 ```
 
