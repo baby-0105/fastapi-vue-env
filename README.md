@@ -1,15 +1,12 @@
 # セットアップ
 
-## Docker 立ち上げ
+```
+$ cp .env.template .env
+$ docker network create fastapi_network
 
-```sh
+.envの mysql用の定数を各々で設定
+
 $ docker-compose up -d
-```
-
-## .env
-
-```
-cp .env.template .env
 ```
 
 .envの編集
