@@ -1,24 +1,28 @@
-<template>
-  <div id="app">
-    <div class="main container">
-      <router-view/>
-    </div>
-  </div>
-</template>
+<script setup lang="ts">
+import axios from 'axios'
+import { ref } from 'vue'
 
-<script>
-export default {
+let userName = ref<string>("")
+
+function getUser() {
+  axios
+    .get("/users")
+    .then((res) => {
+      userName.value = res.data
+    })
+    .catch((e) => {
+      console.log('e:', e);
+    })
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-}
-.main {
-  padding-top: 5em;
-}
+<template>
+  <div class="text-center">
+    <p class="text-rose-500 text-3xl">Hello World</p>
+    <button class="border p-1" @click="getUser" type="button">DBからユーザー情報取得</button>
+    <div>{{ `ユーザー名：${userName}` }}</div>
+  </div>
+</template>
+
+<style scoped>
 </style>
